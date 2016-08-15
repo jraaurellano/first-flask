@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block content %}
+
+    <div id="main">
+      <center>
+        <p style="font-size:36px;color:black;">
+          Welcome to Flask, {{ person }}! Hooray!!
+        </p> 
+        <img src="http://4.bp.blogspot.com/-hpAJ-nsedps/UGhshF6XZNI/AAAAAAAAEm8/YTz1b_-cqgw/s1600/HOORAY.jpeg">
+
+        <form action="showplots" name="chooseplots">
+          {{ form_checkbox.checkbox() }}Here's a checkbox!<br>
+          {{ form_checkbox.checkbox2() }}Here's another!<br>
+          <br><br>
+          <button type="submit">Not useless! Send my checkboxes to showplots!</button><br><br>
+        </form>
+
+      </center>
+    </div>
+
+{% endblock %}
+
+
